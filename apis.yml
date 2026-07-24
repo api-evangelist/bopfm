@@ -1,7 +1,29 @@
 aid: bopfm
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bopfm.png
 name: Bop.fm
-description: Bop.fm is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bop.fm was a music-sharing and playlist startup that let people share and play
+  individual songs across streaming services — building a link for a track that
+  would resolve to whichever service (Spotify, Deezer, SoundCloud, YouTube, Rdio)
+  each listener used. Founded out of Y Combinator, it reportedly reached several
+  million monthly listeners and raised roughly $2M before being acquihired by
+  identity-protection company LifeLock in October 2015, at which point the
+  website, mobile apps, and embedded players were shut down. The company is
+  defunct: the bop.fm domain no longer serves the product (it now redirects to an
+  unrelated parked site) and no developer portal, documentation, or API surface
+  remains online. This profile is retained as a historical record within the API
+  Evangelist network; there are no live API artifacts to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/bopfm/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,35 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-note: >-
+  Acquihired by LifeLock in October 2015 and shut down; domain no longer serves
+  the product. No live developer surface as of 2026-07-18.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Music
+- Music Streaming
+- Playlists
+- Music Discovery
+- Consumer
+- Defunct
+- Acquired
 apis: []
+common:
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/bop-fm
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bop-fm
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
